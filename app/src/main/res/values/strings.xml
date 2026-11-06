@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">disenoInterfaz</string>
+    <style name="EsquinasRedondeadas">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+</resources>

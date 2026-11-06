@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#090909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/txtSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Busca la canción..."
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BAA7A7"
+            app:layout_constraintEnd_toStartOf="@+id/btnLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Iniciar Sesión"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/txtSearch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTendencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Canciones en tendencia"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSearch" />
+
+        <ImageView
+            android:id="@+id/imgLucho"
+            android:layout_width="76dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="Foto Lucho"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTendencia"
+            app:srcCompat="@drawable/lucho" />
+
+        <TextView
+            android:id="@+id/txtRetrica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="RETRICA"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLucho" />
+
+        <TextView
+            android:id="@+id/txtLuchoRK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Lucho RK"
+            android:textColor="#A4A4A4"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRetrica" />
+
+        <ImageView
+            android:id="@+id/imgJudeline"
+            android:layout_width="76dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="Foto Judeline"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/imgLucho"
+            app:layout_constraintTop_toBottomOf="@+id/txtTendencia"
+            app:srcCompat="@drawable/judeline" />
+
+        <TextView
+            android:id="@+id/txtLaFalda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            android:text="LA FALDA"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/txtRetrica"
+            app:layout_constraintTop_toBottomOf="@+id/imgJudeline" />
+
+        <TextView
+            android:id="@+id/txtfatalista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="4dp"
+            android:text="soy un fat..."
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/txtNovedadesEspana"
+            app:layout_constraintTop_toBottomOf="@+id/imgEasyKid" />
+
+        <TextView
+            android:id="@+id/txtfomandjerry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Tom and..."
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/txtfatalista"
+            app:layout_constraintTop_toBottomOf="@+id/imgJohnmayer" />
+
+        <TextView
+            android:id="@+id/txtJudeline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:text="Judeline"
+            android:textColor="#A4A4A4"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/txtLuchoRK"
+            app:layout_constraintTop_toBottomOf="@+id/txtLaFalda" />
+
+        <TextView
+            android:id="@+id/txtEaskykid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="4dp"
+            android:text="Easykid"
+            android:textColor="#A4A4A4"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/txtNovedadesEspana"
+            app:layout_constraintTop_toBottomOf="@+id/txtfatalista" />
+
+        <TextView
+            android:id="@+id/txtJohnMayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="4dp"
+            android:text="John Mayer"
+            android:textColor="#A4A4A4"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/txtEaskykid"
+            app:layout_constraintTop_toBottomOf="@+id/txtfomandjerry" />
+
+        <TextView
+            android:id="@+id/txtRadar"
+            android:layout_width="93dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="4dp"
+            android:text="Las novedades de los artistas que sigues y..."
+            android:textColor="#A4A4A4"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/txtfomandjerry"
+            app:layout_constraintTop_toBottomOf="@+id/imgRadar" />
+
+        <ImageView
+            android:id="@+id/imgAsap"
+            android:layout_width="76dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="Foto Asap"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/imgJudeline"
+            app:layout_constraintTop_toBottomOf="@+id/txtTendencia"
+            app:srcCompat="@drawable/asap" />
+
+        <TextView
+            android:id="@+id/txtShroomClouds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:text="SHROOM..."
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/txtLaFalda"
+            app:layout_constraintTop_toBottomOf="@+id/imgAsap" />
+
+        <TextView
+            android:id="@+id/txtAsap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="4dp"
+            android:text="A$AP Rocky"
+            android:textColor="#A4A4A4"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/txtJudeline"
+            app:layout_constraintTop_toBottomOf="@+id/txtShroomClouds" />
+
+        <ImageView
+            android:id="@+id/imgMyke"
+            android:layout_width="76dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="Foto Myke"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/imgAsap"
+            app:layout_constraintTop_toBottomOf="@+id/txtTendencia"
+            app:srcCompat="@drawable/myke" />
+
+        <TextView
+            android:id="@+id/txtTeImagino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Te Imagino"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/txtShroomClouds"
+            app:layout_constraintTop_toBottomOf="@+id/imgMyke" />
+
+        <TextView
+            android:id="@+id/txtMyke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="4dp"
+            android:text="Myke Towers"
+            android:textColor="#A4A4A4"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/txtAsap"
+            app:layout_constraintTop_toBottomOf="@+id/txtTeImagino" />
+
+        <TextView
+            android:id="@+id/txtDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Flamante música nueva"
+            android:textColor="#A4A4A4"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLuchoRK" />
+
+        <TextView
+            android:id="@+id/txtParati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Especialmente para ti"
+            android:textColor="#A4A4A4"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNovedadesEspana" />
+
+        <TextView
+            android:id="@+id/txtLegal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Legal"
+            android:textColor="#A4A4A4"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgdosk10" />
+
+        <TextView
+            android:id="@+id/txtPrivacidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Política de privacidad"
+            android:textColor="#A4A4A4"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLegal" />
+
+        <TextView
+            android:id="@+id/txtAnuncios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Información sobre los anuncios"
+            android:textColor="#A4A4A4"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/txtPrivacidad"
+            app:layout_constraintTop_toBottomOf="@+id/txtSeguridad" />
+
+        <TextView
+            android:id="@+id/txtAccesibilidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Accesibilidad"
+            android:textColor="#A4A4A4"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/txtAnuncios"
+            app:layout_constraintTop_toBottomOf="@+id/txtCookies" />
+
+        <TextView
+            android:id="@+id/txtSeguridad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Centro de seguridad y privacidad"
+            android:textColor="#A4A4A4"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/txtLegal"
+            app:layout_constraintTop_toBottomOf="@+id/imgdosk10" />
+
+        <TextView
+            android:id="@+id/txtCookies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Configuración de cookies"
+            android:textColor="#A4A4A4"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/txtSeguridad"
+            app:layout_constraintTop_toBottomOf="@+id/imgSetenta" />
+
+        <TextView
+            android:id="@+id/txtNovedades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Novedades del Viernes"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescripcion" />
+
+        <ImageView
+            android:id="@+id/imgViernesEspana"
+            android:layout_width="76dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Foto Viernes España"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNovedades"
+            app:srcCompat="@drawable/novedades" />
+
+        <ImageView
+            android:id="@+id/imgSpotify"
+            android:layout_width="85dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Foto Spotify"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPrivacidad"
+            app:srcCompat="@drawable/spotify" />
+
+        <ImageView
+            android:id="@+id/imgEasyKid"
+            android:layout_width="76dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Foto EasyKid"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/imgViernesEspana"
+            app:layout_constraintTop_toBottomOf="@+id/txtNovedades"
+            app:srcCompat="@drawable/easykid" />
+
+        <ImageView
+            android:id="@+id/imgRadar"
+            android:layout_width="76dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Foto Radar Novedades"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/imgJohnmayer"
+            app:layout_constraintTop_toBottomOf="@+id/txtNovedades"
+            app:srcCompat="@drawable/radar" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgdosk10"
+            android:layout_width="161dp"
+            android:layout_height="224dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:contentDescription="Foto 2010"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtParati"
+            app:shapeAppearanceOverlay="@style/EsquinasRedondeadas"
+            app:srcCompat="@drawable/dosk10" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgSetenta"
+            android:layout_width="161dp"
+            android:layout_height="224dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="6dp"
+            android:contentDescription="Foto 70"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/imgdosk10"
+            app:layout_constraintTop_toBottomOf="@+id/txtParati"
+            app:shapeAppearanceOverlay="@style/EsquinasRedondeadas"
+            app:srcCompat="@drawable/setenta" />
+
+        <ImageView
+            android:id="@+id/imgJohnmayer"
+            android:layout_width="76dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Foto John Mayer"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/imgEasyKid"
+            app:layout_constraintTop_toBottomOf="@+id/txtNovedades"
+            app:srcCompat="@drawable/mayer" />
+
+        <TextView
+            android:id="@+id/txtNovedadesEspana"
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="La Pantera y Quevedo, Myke..."
+            android:textColor="#A4A4A4"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgViernesEspana" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:background="@drawable/degradado_derecha"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSearch" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/degradado_bajo"
+            app:layout_constraintBottom_toBottomOf="@+id/imgdosk10"
+            app:layout_constraintEnd_toEndOf="@+id/imgdosk10"
+            app:layout_constraintStart_toStartOf="@+id/imgdosk10" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/degradado_bajo"
+            app:layout_constraintBottom_toBottomOf="@+id/imgSetenta"
+            app:layout_constraintEnd_toEndOf="@+id/imgSetenta"
+            app:layout_constraintStart_toStartOf="@+id/imgSetenta" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
